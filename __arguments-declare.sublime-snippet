@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+__Arguments__{ ${1:Type} }
+]]></content>
+    <tabTrigger>__arg</tabTrigger>
+    <scope>source.lua</scope>
+    <description>__Arguments__</description>
+</snippet>

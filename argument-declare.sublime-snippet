@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+Argument{ ${2:Name = "${1:name}", }${4:Type = ${3:System.Any}, }${6:Type = ${5:false}, }${8:Default = ${7:nil}, }${10:IsList = ${9:false}} }
+]]></content>
+    <tabTrigger>argument</tabTrigger>
+    <scope>source.lua</scope>
+    <description>Argument</description>
+</snippet>

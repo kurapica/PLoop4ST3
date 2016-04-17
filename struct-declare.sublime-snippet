@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+struct "${1:struct_name}" (function(_ENV)
+	${0:-- var = type}
+end)]]></content>
+    <tabTrigger>struct</tabTrigger>
+    <scope>source.lua</scope>
+    <description>struct</description>
+</snippet>

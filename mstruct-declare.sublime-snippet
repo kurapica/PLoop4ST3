@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+struct "${1:struct_name}" {
+	{ name = "${2:name}"${4:, type = ${3:System.Any}}${6:, Default = ${5:"default"}}${7:, require = true} },
+}]]></content>
+    <tabTrigger>mstruct</tabTrigger>
+    <scope>source.lua</scope>
+    <description>member struct</description>
+</snippet>
