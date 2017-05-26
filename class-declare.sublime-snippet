@@ -2,7 +2,6 @@
 	<content><![CDATA[
 __Doc__[[${4:description}]]
 class "${1:class_name}" (function(_ENV)
-	${3:inherit "${2:System.Object}"}
 
     ----------------------------------------------
     ------------------- Helper -------------------
