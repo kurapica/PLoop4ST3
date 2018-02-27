@@ -1,11 +1,12 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
+--- ${3:description}
+-- @struct ${1:struct_name}
 struct "${1:struct_name}" {
-	${2:default value},
-	function (value)
-		assert(${3:value ~= nil}, "%s ${4: can't be nil.}")
-		return value
-	end
+    ${2:default,
+    }function (value)
+        return value == nil and "the %s can't be nil"
+    end
 }]]></content>
     <tabTrigger>cstruct</tabTrigger>
     <scope>source.lua</scope>

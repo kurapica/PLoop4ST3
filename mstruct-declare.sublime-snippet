@@ -1,5 +1,7 @@
 <snippet>
 	<content><![CDATA[
+--- ${8:description}
+-- @struct ${1:struct_name}
 struct "${1:struct_name}" {
 	{ name = "${2:name}"${4:, type = ${3:System.Any}}${6:, Default = ${5:"default"}}${7:, require = true} },
 }]]></content>

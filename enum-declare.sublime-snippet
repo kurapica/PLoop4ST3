@@ -1,7 +1,9 @@
 <snippet>
-	<content><![CDATA[
+    <content><![CDATA[
+--- ${2:description}
+-- @enum ${1:enum_name}
 enum "${1:enum_name}" {
-	${0:-- enums,}
+    ${0:-- enums,}
 }
 ]]></content>
     <tabTrigger>enum</tabTrigger>

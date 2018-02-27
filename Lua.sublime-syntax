@@ -71,7 +71,7 @@ contexts:
       scope: comment.line.double-dash.lua
       captures:
         1: punctuation.definition.comment.lua
-    - match: \b(break|do|else|for|if|elseif|return|then|repeat|while|until|end|function|local|in|enum|struct|endstruct|class|endclass|interface|endinterface|event|property|member|inherit|extend|import|namespace)\b
+    - match: \b(break|do|else|for|if|elseif|return|then|repeat|while|until|end|function|local|in|prototype|environment|attribute|namespace|enum|struct|endstruct|class|endclass|interface|endinterface|event|property|field|member|inherit|extend|import)\b
       scope: keyword.control.lua
     - match: '(?<![^.]\.|:)\b(false|nil|true|_G|_VERSION|__([\w]+)__|math\.(pi|huge))\b|(?<![.])\.{3}(?!\.)'
       scope: constant.language.lua
@@ -85,3 +85,8 @@ contexts:
       scope: keyword.operator.lua
     - match: '\+|-|%|#|\*|\/|\^|==?|~=|<=?|>=?|(?<!\.)\.{2}(?!\.)'
       scope: keyword.operator.lua
+
+    - match: '(\:)([a-zA-Z_]\w*)\s*(\()'
+      captures:
+        1: function.static.colon
+        2: entity.name.label.lua
